@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e70b2898-e316-4af0-83e7-1c6822c413fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/br/com/thnocard/dio_bootcamp/Bootcamp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/thnocard/faculdade/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/thnocard/dio_bootcamp/Conteudos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/thnocard/dio_bootcamp/Contents.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/thnocard/dio_bootcamp/CursosDIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/thnocard/dio_bootcamp/CursosDIO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/thnocard/dio_bootcamp/Mentorias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/thnocard/dio_bootcamp/Mentorias.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/thnocard/principal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/thnocard/principal/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/thnocard/principal/Student.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +54,7 @@
       <module name="PlataformaUniversal-Ensino" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.thnocard.principal.*" />
+          <option name="PATTERN" value="br.com.thnocard.faculdade.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

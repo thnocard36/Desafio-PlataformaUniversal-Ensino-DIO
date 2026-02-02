@@ -2,7 +2,7 @@ package br.com.thnocard.dio_bootcamp;
 
 import java.time.LocalDate;
 
-public class Mentorias extends Conteudos {
+public class Mentorias extends Contents {
 
     private LocalDate datePublishMentoria;
 

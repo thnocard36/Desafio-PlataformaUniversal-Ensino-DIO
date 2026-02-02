@@ -1,6 +1,6 @@
 package br.com.thnocard.dio_bootcamp;
 
-public class CursosDIO extends Conteudos {
+public class CursosDIO extends Contents {
 
     private int timeTableBootcamp;
 

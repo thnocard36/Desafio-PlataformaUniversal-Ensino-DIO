@@ -1,6 +1,6 @@
 package br.com.thnocard.dio_bootcamp;
 
-public abstract class Conteudos {
+public abstract class Contents {
 
     protected static final double PontosXP_Padrao = 10d;
 
