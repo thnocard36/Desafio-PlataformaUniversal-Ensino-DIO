@@ -2,29 +2,16 @@ package br.com.thnocard.dio_bootcamp;
 
 import java.time.LocalDate;
 
-public class Mentorias {
+public class Mentorias extends Conteudos {
 
-    private String titleMentoria;
-    private String descMentoria;
     private LocalDate datePublishMentoria;
 
     public Mentorias() { // Construtor sem argumentos / vazio
     }
 
-    public String getTitleMentoria() {
-        return titleMentoria;
-    }
-
-    public void setTitleMentoria(String titleMentoria) {
-        this.titleMentoria = titleMentoria;
-    }
-
-    public String getDescMentoria() {
-        return descMentoria;
-    }
-
-    public void setDescMentoria(String descMentoria) {
-        this.descMentoria = descMentoria;
+    @Override
+    public double calculoXP() {
+        return PontosXP_Padrao + 20d;
     }
 
     public LocalDate getDatePublishMentoria() {
@@ -36,11 +23,12 @@ public class Mentorias {
     }
 
     @Override
-    public String toString() {
-        return "Mentorias{" +
-                "titleMentoria='" + titleMentoria + '\'' +
-                ", descMentoria='" + descMentoria + '\'' +
-                ", datePublishMentoria=" + datePublishMentoria +
+    public String toString() { // Quando a classe mãe for 'privado', usar o método "getVariavelX";
+        return "Mentorias{ " +
+                "titleMentoria=' " + getTitleContent() + '\'' +
+                ", descMentoria=' " + getDescriptContent() + '\'' +
+                ", datePublishMentoria= " + datePublishMentoria +
                 '}';
     }
+
 }

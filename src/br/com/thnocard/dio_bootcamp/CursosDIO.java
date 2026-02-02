@@ -1,28 +1,15 @@
 package br.com.thnocard.dio_bootcamp;
 
-public class CursosDIO {
+public class CursosDIO extends Conteudos {
 
-    private String titleBootcamp;
-    private String descriptBootcamp;
     private int timeTableBootcamp;
 
     public CursosDIO() { // Construtor sem argumentos / vazio
     }
 
-    public String getTitleBootcamp() {
-        return titleBootcamp;
-    }
-
-    public void setTitleBootcamp(String titleBootcamp) {
-        this.titleBootcamp = titleBootcamp;
-    }
-
-    public String getDescriptBootcamp() {
-        return descriptBootcamp;
-    }
-
-    public void setDescriptBootcamp(String descriptBootcamp) {
-        this.descriptBootcamp = descriptBootcamp;
+    @Override
+    public double calculoXP() {
+        return 0;
     }
 
     public int getTimeTableBootcamp() {
@@ -35,10 +22,12 @@ public class CursosDIO {
 
     @Override
     public String toString() {
-        return "CursosDIO{" +
-                "titleBootcamp='" + titleBootcamp + '\'' +
-                ", descriptBootcamp='" + descriptBootcamp + '\'' +
-                ", timeTableBootcamp=" + timeTableBootcamp +
+        return "Cursos DIO { " +
+                " titleBootcamp=' " + getTitleContent() + '\'' +
+                ", descriptBootcamp=' " + getDescriptContent() + '\'' +
+                ", timeTableBootcamp= " + timeTableBootcamp +
                 '}';
     }
+
+
 }
