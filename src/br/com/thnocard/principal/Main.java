@@ -6,11 +6,64 @@ import br.com.thnocard.dio_bootcamp.Mentorias;
 import br.com.thnocard.faculdade.Student;
 
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class Main {
 
+    private final static Scanner scander = new Scanner(System.in);
+
     public static void main(String[] args) {
 
+        System.out.println();
+        System.out.println("======================================================== 'UNIVERSIDADE DIO' ========================================================");
+        System.out.println();
+
+        var option = 0;
+        while (true) {
+            System.out.println("Escolha uma das opções: ");
+            System.out.println("1. Matricular Estudante na Graduação");
+            System.out.println("2. Matricular Estudante nos Cursinhos");
+            System.out.println("3. Adicionar Professores");
+            System.out.println("4. Remover Professores");
+            System.out.println("5. Adicionar Matérias");
+            System.out.println("6. Remover Matérias");
+            System.out.println("7. Sair");
+            option = scander.nextInt();
+
+            if(option == 1) {
+                registerGraduationStudents();
+            } else if(option == 2) {
+                registerDIOCourses();
+            } else if(option == 3) {
+                registerProfessors();
+            } else if(option == 4) {
+                deleteProfessors();
+            } else if(option == 5) {
+                registerGraduationContents();
+            } else if(option == 6) {
+                deleteGraduationContents();
+            } else if(option == 7) {
+                System.out.println("\n" + "Muito obrigado e volte logo!");
+                System.out.println("Programa finalizado!");
+                break;
+            } else {
+                System.out.println("\n" + "ATENÇÃO!");
+                System.out.println("Opção Inválida");
+                System.out.println();
+                continue;
+            }
+
+        }
+
+    }
+
+    // Metodo de Matricular / Registrar os(as) estudantes
+    private static void registerGraduationStudents() {
+    }
+
+    // Metodo de Matricular os(as) estudantes nos cursinhos / bootcamps da DIO
+    private static void registerDIOCourses() {
+        System.out.println();
 
         CursosDIO curso1 = new CursosDIO();
         curso1.setTitleContent("Curso Java");
@@ -51,19 +104,6 @@ public class Main {
         bootcamp.getConteudos().add(metoria1);
         bootcamp.getConteudos().add(curso4);
 
-        /*Bootcamp bootcamp1 = new Bootcamp();
-        bootcamp1.setName("Bootcamp Backend com C# .NET");
-        bootcamp1.setDescription("Bootcamp Backend com C# .NET");
-        bootcamp1.getConteudos().add(curso2);
-        bootcamp1.getConteudos().add(metoria2);
-        bootcamp1.getConteudos().add(curso4);*/
-
-
-
-
-        System.out.println();
-        System.out.println("======================================================== 'UNIVERSIDADE DIO' ========================================================");
-        System.out.println();
 
         Student studentThiago = new Student();
         studentThiago.setName("Thiago");
@@ -82,6 +122,7 @@ public class Main {
 
         System.out.println("-----------------------------------------------------------");
         System.out.println("-----------------------------------------------------------");
+        System.out.println();
 
         Student studentMaraiana = new Student();
         studentMaraiana.setName("Maraina");
@@ -96,15 +137,23 @@ public class Main {
         System.out.println("Conteúdos Inscritos de Maraina: " + studentMaraiana.getConteudosAdicionados());
         System.out.println("Conteúdos Concluidos de Maraina: " + studentMaraiana.getConteudosConcluidos());
         System.out.println("XP: " + studentMaraiana.calculoXP());
-
-
-    /**
-        System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(curso3);
-
         System.out.println();
-        System.out.println(metoria1);  **/
-
     }
+
+    // Metodo de Cadastrar Professores da Graduação
+    private static void registerProfessors() {
+    }
+
+    // Metodo de Excluir Professores
+    private static void deleteProfessors() {
+    }
+
+    // Metodo de Matricular / Registrar os(as) estudantes
+    private static void deleteGraduationContents() {
+    }
+
+    // Metodo de Registrar materias / conteudos dos cursos de graduação
+    private static void registerGraduationContents() {
+    }
+
 }

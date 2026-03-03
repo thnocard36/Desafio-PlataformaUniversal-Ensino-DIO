@@ -24,10 +24,10 @@ public class Mentorias extends Contents {
 
     @Override
     public String toString() { // Quando a classe mãe for 'privado', usar o método "getVariavelX";
-        return "Mentorias{ " +
-                "titleMentoria=' " + getTitleContent() + '\'' +
-                ", descMentoria=' " + getDescriptContent() + '\'' +
-                ", datePublishMentoria= " + datePublishMentoria +
+        return "Mentorias {" +
+                "Titulo da Mentoria: '" + getTitleContent() + '\'' +
+                ", Descrição: '" + getDescriptContent() + '\'' +
+                ", Data de Publicação: " + datePublishMentoria +
                 '}';
     }
 

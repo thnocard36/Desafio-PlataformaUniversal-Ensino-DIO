@@ -22,12 +22,10 @@ public class CursosDIO extends Contents {
 
     @Override
     public String toString() {
-        return "Cursos DIO { " +
-                " titleBootcamp=' " + getTitleContent() + '\'' +
-                ", descriptBootcamp=' " + getDescriptContent() + '\'' +
-                ", timeTableBootcamp= " + timeTableBootcamp +
+        return "Cursos DIO {" +
+                " Titulo do Bootcamp: '" + getTitleContent() + '\'' +
+                ", Descrição: '" + getDescriptContent() + '\'' +
+                ", Tempo de Duração do Bootcamp: " + timeTableBootcamp +
                 '}';
     }
-
-
 }

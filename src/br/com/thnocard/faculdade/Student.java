@@ -26,7 +26,7 @@ public class Student {
             this.contentsConcluidos.add(conteudos.get());
             this.contentsAdicionados.remove(conteudos.get());
         } else {
-            System.out.println("Você não está matriculado em nenhum curso");
+            System.out.println("Você não está matriculado(a) em nenhum curso");
         }
     }
 
@@ -68,7 +68,9 @@ public class Student {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return Objects.equals(name, student.name) && Objects.equals(contentsAdicionados, student.contentsAdicionados) && Objects.equals(contentsConcluidos, student.contentsConcluidos);
+        return Objects.equals(name, student.name)
+                && Objects.equals(contentsAdicionados, student.contentsAdicionados)
+                && Objects.equals(contentsConcluidos, student.contentsConcluidos);
     }
 
     @Override
